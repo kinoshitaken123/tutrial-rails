@@ -20,6 +20,12 @@ class UsersController < ApplicationController
   end  
   end  
   
+  #GET  /users/:id/edit
+  def edit
+    @user = User.find(rapamas[:id])
+    # => app/views/users/edit.html.erb
+  end  
+  
   private
   
   def user_paramas
